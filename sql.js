@@ -28,28 +28,31 @@ const updateMongo = async () => {
     const columns = config.mysqlQueryColumns
       .map((field) => field.name)
       .join(", ");
-    mysqlConnection.query(`SELECT ${columns} FROM users`, (err, results) => {
-      if (err) {
-        console.error(`MySQL query error: ${err}`);
-        return;
-      }
-      results.forEach(async (row) => {
-        try {
-          let updateData = {};
-          config.mysqlQueryColumns.forEach((field) => {
-            updateData[field.name] = row[field.name];
-          });
-          await Player.findOneAndUpdate(
-            { identifier: row.identifier },
-            updateData,
-            { upsert: true }
-          );
-        } catch (err) {
-          console.error(`Failed to update MongoDB: ${err}`);
+    mysqlConnection.query(
+      `SELECT ${columns} FROM ${config.table_name}`,
+      (err, results) => {
+        if (err) {
+          console.error(`MySQL query error: ${err}`);
+          return;
         }
-      });
-      console.log("Data updated to MongoDB");
-    });
+        results.forEach(async (row) => {
+          try {
+            let updateData = {};
+            config.mysqlQueryColumns.forEach((field) => {
+              updateData[field.name] = row[field.name];
+            });
+            await Player.findOneAndUpdate(
+              { identifier: row.identifier },
+              updateData,
+              { upsert: true }
+            );
+          } catch (err) {
+            console.error(`Failed to update MongoDB: ${err}`);
+          }
+        });
+        console.log("Data updated to MongoDB");
+      }
+    );
   } catch (err) {
     console.error("Failed to update MongoDB:", err);
   }

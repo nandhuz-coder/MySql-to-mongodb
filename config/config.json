@@ -32,5 +32,6 @@
             "type": "String"
         }
     ],
-    "fetch_time": 600000
+    "fetch_time": 600000,
+    "table_name": "users"
 }
