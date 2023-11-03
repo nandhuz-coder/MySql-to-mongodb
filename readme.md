@@ -30,7 +30,7 @@ Follow these instructions to set up and run the script on your local machine.
 1. **Clone the Repository**:
 
    ```bash
-   git clonehttps://github.com/nandhuz-coder/Mysql-to-mongodb
+   git clonehttps://github.com/nandhuz-coder/MySql-to-mongodb
    cd Mysql-to-mongodb
    ```
 
