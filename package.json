@@ -1,0 +1,15 @@
+{
+  "name": "sql_to_mongodb",
+  "version": "1.0.0",
+  "description": "The script allows you to merge your SQL database with mongodb.",
+  "main": "sql.js",
+  "scripts": {
+    "start": "node sql.js"
+  },
+  "author": "Nandhuz-coder",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^8.0.0",
+    "mysql2": "^3.6.3"
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "database": {
+        "host": "your_mysql_host",
+        "user": "your_mysql_user",
+        "databaseName": "your_mysql_database_name",
+        "collection": "your_mongodb_collection_name",
+        "mongodb": "mongodb://your_mongodb_host:your_mongodb_port/your_mongodb_database"
+    },
+    "mysqlQueryColumns": [
+        {
+            "name": "identifier",
+            "type": "String"
+        },
+        {
+            "name": "accounts",
+            "type": "String"
+        },
+        {
+            "name": "`group`",
+            "type": "String"
+        },
+        {
+            "name": "job",
+            "type": "String"
+        },
+        {
+            "name": "firstname",
+            "type": "String"
+        },
+        {
+            "name": "lastname",
+            "type": "String"
+        }
+    ],
+    "fetch_time": 600000
+}
