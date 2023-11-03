@@ -69,12 +69,13 @@ Edit the `config.json` file in the project directory to configure your database 
       "name": "`group`",
       "type": "String"
     }
-    // give ` for keyword as a column name
-    // Add more columns as needed
   ],
-  "fetch_time": 600000 // default time 10 mints
+  "fetch_time": 600000,
+  "table_name": "tablename"
 }
 ```
+    // give ` for keyword as a column name
+    // Add more columns as needed
 
 ## Running the Script
 
