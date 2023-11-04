@@ -7,6 +7,7 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Configuration](#configuration)
+  -[Note](#Note)
 - [Running the Script](#running-the-script)
 - [Built With](#built-with)
 - [License](#license)
@@ -71,8 +72,12 @@ Edit the `config.json` file in the project directory to configure your database 
   "table_name": "tablename"
 }
 ```
- Add password; If Sql database have password. ``` "password": "your_mysql_password",```. Enclose in ``` ` ``` for keyword as column name.
- Add more columns as needed.
+## Note
+
+1. Add password; If Sql database have password. ``` "password": "your_mysql_password",```.
+2. Enclose in ``` ` ``` for keyword as column name.
+3. Add more columns as needed.
+4. If identifier name is changed. change it also from (sql.js)
 
 ## Running the Script
 
