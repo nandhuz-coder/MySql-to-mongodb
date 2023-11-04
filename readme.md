@@ -77,7 +77,7 @@ Edit the `config.json` file in the project directory to configure your database 
 1. Add password; If Sql database have password. ``` "password": "your_mysql_password",```.
 2. Enclose in ``` ` ``` for keyword as column name.
 3. Add more columns as needed.
-4. If identifier name is changed. change it also from (sql.js).
+4. If identifier name is changed. change it also from [sql.js](sql.js).
 
 ## Running the Script
 
