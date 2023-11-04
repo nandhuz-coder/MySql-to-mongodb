@@ -58,7 +58,6 @@ Edit the `config.json` file in the project directory to configure your database 
       "name": "identifier",
       "type": "String"
     },
-    //dont change identifier
     {
       "name": "accounts",
       "type": "String"
