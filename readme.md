@@ -71,10 +71,8 @@ Edit the `config.json` file in the project directory to configure your database 
   "table_name": "tablename"
 }
 ```
- add password if Sql database have password
-   ``` "password": "your_mysql_password",```
-give ``` ` ``` for keyword as a column name
-Add more columns as needed
+ Add password; If Sql database have password. ``` "password": "your_mysql_password",```. Enclose in ``` ` ``` for keyword as column name.
+ Add more columns as needed.
 
 ## Running the Script
 
