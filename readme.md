@@ -10,6 +10,8 @@
   - [Note](#note)
 - [Running the Script](#running-the-script)
 - [Built With](#built-with)
+- [Security](#security)
+  - [Contact](#contact)
 - [License](#license)
 
 ## Introduction
@@ -72,10 +74,11 @@ Edit the `config.json` file in the project directory to configure your database 
   "table_name": "tablename"
 }
 ```
+
 ### Note
 
-1. Add password; If Sql database have password. ``` "password": "your_mysql_password",```.
-2. Enclose in ``` ` ``` for keyword as column name.
+1. Add password; If Sql database have password. ` "password": "your_mysql_password",`.
+2. Enclose in `` ` `` for keyword as column name.
 3. Add more columns as needed.
 4. If identifier name is changed. change it also from [sql.js](sql.js).
 
@@ -88,7 +91,7 @@ To run the script, follow these steps:
    Open your terminal and navigate to the directory where your Node.js script is located. Use the `cd` command to change directories.
 
    ```bash
-   cd /path/to/your/project
+   cd /path/to/MySql-to-mongodb
    ```
 
 2. **Run the Script**:
@@ -104,6 +107,14 @@ To run the script, follow these steps:
 - [Node.js](https://nodejs.org/) - JavaScript runtime
 - [mysql2](https://www.npmjs.com/package/mysql2) - MySQL client for Node.js
 - [mongoose](https://mongoosejs.com/) - MongoDB object modeling tool
+
+## Security
+
+For detailed security information, including how to report security issues and security best practices, please refer to our [Security Policy](SECURITY.md).
+
+### Contact
+
+For any security-related questions or concerns, please reach out to our security team at [dev.nandhagopan@gmail.com](mailto:dev.nandhagopan@gmail.com).
 
 ## License
 
